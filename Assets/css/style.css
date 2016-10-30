@@ -1,0 +1,407 @@
+/* common elements on all pages including header, footer, contact me page and the content area box. */
+/*for whole body */
+html {
+	height: 100%;
+	margin: 0px;
+}
+
+body {
+	height: 100%;
+	margin: 0px;
+	
+	background:
+	linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+	linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+	linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+	linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+	linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+	linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+	background-color: #131313;
+	background-size: 20px 20px;
+}
+
+.wrapper {
+	min-height: 100%;
+	margin-left:15%;
+	margin-right:15%;
+	margin-bottom: auto;
+}
+
+/* header section with name and navigations */
+header {
+	height: 70px;
+	width: 100%;
+	background-color: #ffffff;
+	font-family: "Times New Roman";
+	border-bottom: 5px solid #cccccc;
+}
+
+/* name header */
+header div h2 {
+	margin-top:0px;
+	margin-left:15%;
+	padding-top: 20px;
+	float:left;
+	font-size: 30px;
+	height: 50px;
+	width: 200px;
+	text-align: center;
+	font-weight: bold;
+	background-color: #4aaaa5;
+	color: white;
+}
+
+/* navigation header */
+header nav {
+	float:right;
+	font-size: 18px;
+	padding-top: 26px;
+	margin-right: 15%;
+}
+
+header nav a:link {
+	text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #777777;
+}
+
+header nav a:hover {
+	font-weight: bold;
+}
+
+header nav a:visited {
+	text-decoration: none;
+	color: #777777;
+}
+
+/*border to add between three navi options */
+.sideSeparator {
+	border-right: 1px solid #777777;
+}
+
+/*Main Content Box */
+section {
+	float: left;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 5%;
+	background-color: #ffffff;
+	border: 5px solid #dddddd;
+	border-radius: 5px;
+	min-height: 200px;
+	width: 60%;
+	overflow: auto;
+}
+
+#sectionDivH2 {
+	font-size: 30px;
+	font-weight: bold;
+	color: #4aaaa5;
+}
+
+.line-separator1{
+	padding:10px;
+	border-bottom: 4px solid #dddddd;
+	clear:both;
+}
+
+/* Connect with me box */
+aside {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	float: right;
+	min-height: 100px;
+	overflow: auto;
+	width: 20%;
+	text-align: center;
+	color: #4aaaa5;
+	font-size: 25px;
+	font-weight: bold;
+	background-color: #ffffff;
+	border: 5px solid #dddddd;
+	border-radius: 5px;
+}
+
+.imageclass {
+	height: 55px;
+	width: 55px;
+}
+
+.line-separator2{
+	margin:7%;
+	border-bottom: 4px solid #dddddd;
+}
+
+
+/* Footer */
+footer {
+	clear: both;
+	font-size: 20px;
+	border-top: 10px solid #4aaaa5;
+	padding-top: 25px;
+	height: 50px;
+	width: 100%;
+	background-color: #666666;
+	padding-top: 20px;
+	text-align: center;
+}
+
+#push {
+	height: 50px;
+}
+
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* - - - - - - - - - - - - -Page Specific - - - - - - - - - - - -*/
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* About me Page */
+#myProfilePicDiv {
+	float: left;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+#imgProfilePic {
+	height: 315px;
+	width: 300px;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Portfolio page */
+.sectionDivImg {
+	position: relative;
+	height: 350px;
+	width: 350px;
+	border: 2px solid black;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	z-index: 0;
+}
+
+.imageSizeProjects {
+	height: 350px;
+	width: 350px;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+.classPortfolioName {
+	position: absolute;
+	bottom: 20px;
+	left: 0px;
+	height: 50px;
+	width: 350px;
+	padding-top:20px;
+	font-size: 20px;
+	text-align: center;
+	background-color: #4aaaa5;
+	z-index: 999;
+}
+
+/*buttons*/
+#submitButton {
+	margin-bottom: 20px;
+	font-family: "Times New Roman";
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Contact Me page */
+.boldClass {
+	font-weight: bold;
+}
+.singleLineInput {
+	width: 100%;
+}
+
+.multipleLineInput {
+	width: 100%;
+	height: 400px;
+}
+
+.buttonsSubmitReset {
+	height: 50px;
+	width: 200px;
+	font-size: 15px;
+	margin-right: 20px;
+	border: 2px solid lightgray;
+	border-radius: 2px;
+	background-color: #4aaaa5;
+}
+
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* - - - - - - - - - - - - -980px Screen - - - - - - - - - - - -*/
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+@media screen and (max-width: 980px) {
+
+	/*Main Content Box */
+	section {
+		width: 45%;
+		margin-top:30px;
+	}
+
+	/*Connect with me box*/
+	aside {
+		width: 32%;
+	}
+		
+	/*my profile pic*/
+	#imgProfilePic {
+		height: auto;
+		width: 100%;
+	}
+	
+	/*Portfolio Page*/
+	.sectionDivImg {
+		margin-left:auto;
+		margin-right: auto;
+		height: auto;
+		width: 100%;
+	}
+
+	.floatRight {
+	float: left;
+	}
+	
+	.imageSizeProjects {
+		height: auto;
+		width: 100%;
+	}
+
+	.classPortfolioName {
+		width: 100%;
+	}
+
+
+}
+
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* - - - - - - - - - - - - -768px Screen - - - - - - - - - - - -*/
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+@media screen and (max-width: 768px) {
+	
+	/*	main body margins */
+	.wrapper {
+		margin-left:5%;
+		margin-right:5%;
+	}
+
+	/* name header */
+	header div h2 {
+		margin-left:5%;
+	}
+
+	/* navigation header */
+	header nav {
+		margin-right: 5%;
+	}
+
+	/*Main Content Box */
+	section {
+		margin-top: 50px;
+		padding: 5%;
+		width: 85%;
+	}
+
+	/* Connect with me box */
+	aside {
+		text-align: left;
+		padding-bottom: 0;
+		padding-left:5%;
+		float: left;
+		min-height: 150px;
+		width: 90%;	
+	}
+
+	.imageclass {
+	height: 50px;
+	width: 50px;
+	}
+
+	.line-separator2{
+		margin:3% 5% 5% 0;
+		margin-bottom:25px;
+		border-bottom: 4px solid #dddddd;
+	}
+
+	/*Portfolio page*/
+	.floatRight {
+	float: right;
+	}
+
+	.sectionDivImg {
+		height: 275px;
+		width: 275px;
+	}
+
+	.imageSizeProjects {
+		height: 275px;
+		width: 275px;
+	}
+
+	.classPortfolioName {
+		width: 275px;
+	}
+
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* - - - - - - - - - - - - -640px Screen - - - - - - - - - - - -*/
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+@media screen and (max-width: 640px) {
+	/* name header */
+
+	header {
+	height: 140px;
+	width: 100%;
+}
+
+	header div h2 {
+		margin-top:0px;
+		margin-left:0;
+		width: 100%;
+	}
+
+	/* navigation header */
+	header nav {
+		text-align: center;
+		margin-left: auto;
+		margin-right:auto;
+		width: 100%
+
+	}
+
+/*	Portfolio page */
+	.sectionDivImg {
+		height: auto;
+		width: 100%;
+	}
+
+	.floatRight {
+	float: left;
+	}
+
+	.imageSizeProjects {
+		height: auto;
+		width: 100%;
+	}
+
+	.classPortfolioName {
+		width: 100%;
+	}
+
+}
